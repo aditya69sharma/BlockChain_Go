@@ -1,0 +1,3 @@
+https://medium.com/@cryptoneurnetwork/linked-list-vs-blockchain-17bab8f277c5#:~:text=The%20key%20difference%20between%20Blockchain,decentralized%20and%20organizes%20data%20linearly.
+
+https://en.bitcoin.it/wiki/Block_hashing_algorithm
