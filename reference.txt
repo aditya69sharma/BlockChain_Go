@@ -1,3 +1,33 @@
 https://medium.com/@cryptoneurnetwork/linked-list-vs-blockchain-17bab8f277c5#:~:text=The%20key%20difference%20between%20Blockchain,decentralized%20and%20organizes%20data%20linearly.
 
 https://en.bitcoin.it/wiki/Block_hashing_algorithm
+
+Proof-of-work:
+A key idea of blockchain is that one has to perform some hard work to put data in it.
+It is this hard work that makes blockchain secure and consistent. Also, a reward is paid 
+for this hard work (this is how people get coins for mining).
+This mechanism is very similar to the one from real life: one has to work hard to get a reward and 
+to sustain their life. In blockchain, some participants (miners) of the network work to sustain the network, 
+to add new blocks to it, and get a reward for their work. As a result of their work, a block is incorporated 
+into the blockchain in a secure way, which maintains the stability of the whole blockchain database. It’s worth 
+noting that, the one who finished the work has to prove this.
+This whole “do hard work and prove” mechanism is called proof-of-work. It’s hard because it requires a lot of 
+computational power: even high performance computers cannot do it quickly. Moreover, the difficulty of this work increases 
+from time to time to keep new blocks rate at about 6 blocks per hour. In Bitcoin, the goal of such work is to find a hash 
+for a block, that meets some requirements. And it’s this hash that serves as a proof. Thus, finding a proof is the actual work.
+One last thing to note. Proof-of-Work algorithms must meet a requirement: doing the work is hard, but verifying the proof is easy. 
+A proof is usually handed to someone else, so for them, it shouldn’t take much time to verify it.
+
+Hashing: 
+Hashing is a process of obtaining a hash for specified data. A hash is a unique representation of the data it was calculated on. 
+A hash function is a function that takes data of arbitrary size and produces a fixed size hash.
+
+Here are some key features of hashing:
+Original data cannot be restored from a hash. Thus, hashing is not encryption.
+Certain data can have only one hash and the hash is unique.
+Changing even one byte in the input data will result in a completely different hash.
+
+Hashing functions are widely used to check the consistency of data. Some software providers publish checksums in addition to a software package. 
+After downloading a file you can feed it to a hashing function and compare produced hash with the one provided by the software developer.
+In blockchain, hashing is used to guarantee the consistency of a block. The input data for a hashing algorithm contains the hash of the previous 
+block, thus making it impossible (or, at least, quite difficult) to modify a block in the chain: one has to recalculate its hash and hashes of all the blocks after it.
